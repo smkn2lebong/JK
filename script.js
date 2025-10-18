@@ -3,7 +3,7 @@
 // =========================================
 
 // 🔗 Ganti URL API di bawah dengan milik kakak:
-const API_URL = "https://script.google.com/macros/s/AKfycbxvFBcE1rT5SMrtFYE7KnY2ljDMvktP_8W2PZXYCpf-l92_QmVPYiV119WPZHKkYsT8ew/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbwuIcX8AECRV38jnAK8IkwyKfwMuwQAiun0S9W8adcLAKhimuPHG73iJ0d-y4NPsn_u/exec";
 
 // ⚙️ Event listener form
 document.getElementById("ajuanForm").addEventListener("submit", async function(e) {
@@ -120,3 +120,4 @@ function generateWhatsAppMessage(data, fileLinks) {
   message += `\nTerima kasih.`;
   return message;
 }
+
