@@ -1,6 +1,54 @@
-<iframe
-  src="https://script.google.com/macros/s/AKfycbxjUNAoPzdSKgrFVTLn9hJkVhb2N3ZV9zUPOLPXl43qhUNEHMvDqPqQAL-qg2TZ56o/exec"
-  width="100%"
-  height="1800"
-  style="border:none;">
-</iframe>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URC JKN - Form Ajuan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Form Ajuan URC JKN</h2>
+
+  <form id="urcForm">
+    <label>Nama Pasien</label>
+    <input type="text" name="nama" required>
+
+    <label>No KK</label>
+    <input type="text" name="kk" required>
+
+    <label>No NIK</label>
+    <input type="text" name="nik" required>
+
+    <label>No HP</label>
+    <input type="text" name="hp" required>
+
+    <label>Alamat</label>
+    <textarea name="alamat" required></textarea>
+
+    <label>Puskesmas Terdekat</label>
+    <input type="text" name="puskesmas" required>
+
+    <label>Nama Relawan Pengaju</label>
+    <input type="text" name="relawan" required>
+
+    <h3>Berkas Pendukung</h3>
+    <label>Upload KTP</label>
+    <input type="file" name="ktp" accept="image/*,.pdf">
+
+    <label>Upload KK</label>
+    <input type="file" name="kkfile" accept="image/*,.pdf">
+
+    <label>Upload Surat Rawat Inap</label>
+    <input type="file" name="rawatinap" accept="image/*,.pdf">
+
+    <label>Upload Surat Tidak Mampu</label>
+    <input type="file" name="tidakmampu" accept="image/*,.pdf">
+
+    <button type="submit">Kirim Ajuan</button>
+  </form>
+
+  <p id="status"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
